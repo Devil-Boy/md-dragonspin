@@ -1,0 +1,7 @@
+name: MobDisguiseDragonSpin
+main: pgDev.bukkit.MDDragonSpin.MDDSMain
+version: 0.1
+author: PG Dev Team
+authors: [Devil Boy]
+description: Spinning dragons since 2012.
+depend: [MobDisguise, Spout]
