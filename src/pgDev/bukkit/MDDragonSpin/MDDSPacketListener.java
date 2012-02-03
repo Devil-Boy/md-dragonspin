@@ -26,10 +26,10 @@ public class MDDSPacketListener implements PacketListener {
 				
 				if (plugin.fixedPackets.contains(packt)) {
 					plugin.fixedPackets.remove(packt);
-					System.out.println("32 dragon packet sent");
+					//System.out.println("32 dragon packet sent");
 				} else {
 					plugin.sendEntityLookSpin(player, pkt);
-					System.out.println("32 dragon packet queued");
+					//System.out.println("32 dragon packet queued");
 					return false;
 				}
 			}
@@ -40,10 +40,10 @@ public class MDDSPacketListener implements PacketListener {
 				
 				if (plugin.fixedPackets.contains(packt)) {
 					plugin.fixedPackets.remove(packt);
-					System.out.println("33 dragon packet sent");
+					//System.out.println("33 dragon packet sent");
 				} else {
 					plugin.sendEntityLookSpin(player, pkt);
-					System.out.println("33 dragon packet queued");
+					//System.out.println("33 dragon packet queued");
 					return false;
 				}
 			}
@@ -54,10 +54,10 @@ public class MDDSPacketListener implements PacketListener {
 				
 				if (plugin.fixedPackets.contains(packt)) {
 					plugin.fixedPackets.remove(packt);
-					System.out.println("24 dragon packet sent");
+					//System.out.println("24 dragon packet sent");
 				} else {
 					plugin.sendEntityLookSpin(player, pkt);
-					System.out.println("24 dragon packet queued");
+					//System.out.println("24 dragon packet queued");
 					return false;
 				}
 			}
