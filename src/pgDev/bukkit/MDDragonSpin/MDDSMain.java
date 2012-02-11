@@ -4,6 +4,8 @@ import java.lang.reflect.Field;
 import java.util.LinkedList;
 
 import me.desmin88.mobdisguise.MobDisguise;
+import me.desmin88.mobdisguise.api.MobDisguiseAPI;
+import me.desmin88.mobdisguise.utils.Disguise.MobType;
 import net.minecraft.server.DataWatcher;
 import net.minecraft.server.MathHelper;
 import net.minecraft.server.Packet;
@@ -48,8 +50,8 @@ public class MDDSMain extends JavaPlugin {
 	public boolean isDisguisedDragon(World world, int id) {
 		for (Player player : world.getPlayers()) {
 			if (player.getEntityId() == id && // Is a player
-					MobDisguise.disList.contains(player.getName()) && // Is disguised
-						MobDisguise.playerMobId.get(player.getName()) == 63) { // Is an EnderDragon
+					MobDisguiseAPI.isDisguised(player) && // Is disguised
+						MobDisguise.playerMobDis.get(player.getName()).mob == MobType.ENDERDRAGON) { // Is an EnderDragon
 				return true;
 			}
 		}
